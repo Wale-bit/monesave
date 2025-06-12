@@ -1,8 +1,8 @@
 import express from 'express';
-import { createConsentRequest } from '../controllers/consentController.js';
+import { requestParentLink } from '../controllers/consentController.js';
 
 const router = express.Router();
 
-router.post('/request', createConsentRequest);
+router.post('/request-parent', requestParentLink);
 
 export default router;
